@@ -1,6 +1,6 @@
 from pypdf import PdfReader
 
-# change "file" to actual file name
+# change "file" to an actual file name
 reader = PdfReader('file.pdf')
 
 link = "/Link"
@@ -23,3 +23,4 @@ sorted_link_list = list(set(link_list))
 with open ("links.txt", "w") as output:
 	for link in sorted_link_list:
 		output.write(link + "\n")
+
